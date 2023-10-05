@@ -1,0 +1,243 @@
+:root {
+    --cor-site: #0597F2;
+}
+
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.maxWidth {
+    max-width: 90em;
+    /*1440px*/
+}
+
+.header {
+    text-align: center;
+    margin: auto;
+}
+
+.header_logo {
+    width: 8.9em;
+    height: 100%;
+    margin: 1em;
+}
+
+.header_nav {
+    background-color: var(--cor-site);
+}
+
+ul {
+    margin: 0;
+}
+
+.header_nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em bold;
+}
+
+.header_nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover {
+    background-color: color-mix(in srgb, var(--cor-site), black 20%);
+}
+
+@media screen and (min-width:48em) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_logo {
+        margin-left: 2em;
+    }
+
+    .header_nav {
+        background-color: initial;
+    }
+
+    .header_nav ul {
+        margin-right: 2em;
+        font-size: .8em;
+    }
+
+    .header_nav li {
+        display: inline-block;
+    }
+
+    .header_nav a {
+        color: var(--cor-site);
+        border-radius: 5px;
+    }
+
+    .header_nav a:hover {
+        background-color: color-mix(in srgb, var(--cor-site), white 70%);
+    }
+}
+
+.trailer {
+    background-color: #8fb0c5;
+    padding-bottom: 1.5em;
+    padding-left: em;
+    padding-right: 1em;
+    line-height: 1.5em;
+}
+
+.trailer div {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.titulo_trailer_fonte {
+    margin-top: 0;
+    padding-top: .5em;
+    color: rgb(255, 255, 255);
+}
+
+.titulo_trailer_fonte h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.trailer_paragrafo {
+    font-size: 1.1em;
+    color: white;
+}
+
+.trailer_botao {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: var(--cor-site);
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.trailer_botao:hover {
+    background-color: color-mix(in srgb, var(--cor-site), white 70%);
+    color: black;
+}
+
+.trailer_video {
+    display: none;
+}
+
+@media screen and (min-width:48em) {
+
+
+    .trailer_botao {
+        display: none;
+    }
+
+    .trailer {
+        background-image: url(IMAGENS/4595107-back-to-the-future-science-fiction-movies-time-travel-artwork-minimalism.jpg);
+        background-size: cover;
+        background-position: unset;
+        background-repeat: no-repeat;
+        background-color: initial;
+    }
+
+    .trailer_video {
+        display: block;
+    }
+
+    .trailer_video .tamanho {
+        border-radius: .8em;
+        margin-bottom: 1em;
+    }
+
+
+    .trailer_paragrafo {
+        margin-bottom: 2em;
+    }
+}
+
+.main_content {
+    background-color: #f8c1b5;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.main_content div {
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.main_content_title {
+    color: #F23207
+}
+
+.icon_img {
+    width: 5.5em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.col {
+    flex: 1 0 auto;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+article .icon_img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.trailer_botao_article{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: #F23207;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+article .icon_img {
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+@media screen and (min-width: 48em) {
+    .col-6 {
+        width: calc(50% - 2rem);
+    }
+}
+
+footer{
+    background-color: #F23207;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+}
+
+.fonte{
+  font-family: monospace; 
+    font-size: 1.6em;
+}
